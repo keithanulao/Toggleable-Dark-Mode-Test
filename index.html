@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello World</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">  # Link to stylesheet
+</head>
+<body class="{{ dark_mode and 'dark-mode' or '' }}">
+    <div class="container">
+        <h1>Hello World</h1>
+        <a href="/toggle_theme">Toggle Dark Mode</a>
+    </div>
+</body>
+</html>
